@@ -17,11 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XzD-fx-gTP">
-                                <rect key="frame" x="20" y="103" width="353" height="705"/>
+                                <rect key="frame" x="20" y="59" width="353" height="749"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="XzD-fx-gTP" secondAttribute="height" multiplier="353:705" id="xRh-p8-pEG"/>
-                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -32,8 +29,6 @@
                         <constraints>
                             <constraint firstItem="bRB-NU-Tr3" firstAttribute="bottom" secondItem="XzD-fx-gTP" secondAttribute="bottom" constant="10" id="2p9-iU-gJy"/>
                             <constraint firstItem="XzD-fx-gTP" firstAttribute="leading" secondItem="bRB-NU-Tr3" secondAttribute="leading" constant="20" id="9vq-oj-nNT"/>
-                            <constraint firstItem="XzD-fx-gTP" firstAttribute="centerX" secondItem="vpy-1i-YfX" secondAttribute="centerX" id="Rrd-lX-LYQ"/>
-                            <constraint firstItem="XzD-fx-gTP" firstAttribute="centerY" secondItem="vpy-1i-YfX" secondAttribute="centerY" id="n6b-vX-VB1"/>
                             <constraint firstItem="XzD-fx-gTP" firstAttribute="top" secondItem="bRB-NU-Tr3" secondAttribute="top" id="rz2-ut-2Yu"/>
                             <constraint firstItem="bRB-NU-Tr3" firstAttribute="trailing" secondItem="XzD-fx-gTP" secondAttribute="trailing" constant="20" id="v8d-Ko-SaW"/>
                         </constraints>
@@ -52,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KZR-pu-vlS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="7"/>
+            <point key="canvasLocation" x="166" y="8"/>
         </scene>
     </scenes>
     <resources>
