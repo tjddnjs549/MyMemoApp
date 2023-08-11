@@ -1,4 +1,4 @@
-# MyMemoApp
+# MyMemo App
 ## 8월 7월 ~ 8월 11일/ 개인 과제 - 메모장 만들기
 
 
