@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Memo View Controller-->
+        <scene sceneID="kat-I8-Pyx">
+            <objects>
+                <viewController storyboardIdentifier="CreateMemoViewController" id="S04-hU-ap0" customClass="CreateMemoViewController" customModule="MyMemoList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vpy-1i-YfX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XzD-fx-gTP">
+                                <rect key="frame" x="20" y="103" width="353" height="705"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XzD-fx-gTP" secondAttribute="height" multiplier="353:705" id="xRh-p8-pEG"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bRB-NU-Tr3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bRB-NU-Tr3" firstAttribute="bottom" secondItem="XzD-fx-gTP" secondAttribute="bottom" constant="10" id="2p9-iU-gJy"/>
+                            <constraint firstItem="XzD-fx-gTP" firstAttribute="leading" secondItem="bRB-NU-Tr3" secondAttribute="leading" constant="20" id="9vq-oj-nNT"/>
+                            <constraint firstItem="XzD-fx-gTP" firstAttribute="centerX" secondItem="vpy-1i-YfX" secondAttribute="centerX" id="Rrd-lX-LYQ"/>
+                            <constraint firstItem="XzD-fx-gTP" firstAttribute="centerY" secondItem="vpy-1i-YfX" secondAttribute="centerY" id="n6b-vX-VB1"/>
+                            <constraint firstItem="XzD-fx-gTP" firstAttribute="top" secondItem="bRB-NU-Tr3" secondAttribute="top" id="rz2-ut-2Yu"/>
+                            <constraint firstItem="bRB-NU-Tr3" firstAttribute="trailing" secondItem="XzD-fx-gTP" secondAttribute="trailing" constant="20" id="v8d-Ko-SaW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Oho-Oe-KvY">
+                        <barButtonItem key="leftBarButtonItem" title="취소" style="done" id="quL-rU-R65">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <action selector="backButtenTapped:" destination="S04-hU-ap0" id="6FI-Iu-w2h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="memoTextView" destination="XzD-fx-gTP" id="9fj-ai-biR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZR-pu-vlS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="474" y="7"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
