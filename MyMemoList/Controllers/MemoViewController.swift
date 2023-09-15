@@ -46,6 +46,7 @@ class MemoViewController: UIViewController {
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
         
+        
         TableViewCellSetting()
         tabBarSetup()
     }
@@ -58,8 +59,8 @@ class MemoViewController: UIViewController {
         let numberFormatter = NumberFormatter()
         let memoCount = numberFormatter.string(for: localRealm.objects(MemoList.self).count)! //갯수 가져오기
         navigationItem.title = "\(memoCount)개의 메모" //타이틀 제목
-        self.navigationController?.navigationBar.prefersLargeTitles = true //제목 크게 하기
-        self.navigationItem.hidesSearchBarWhenScrolling = false // 스크롤 할 때 서치부분은 남겨두기
+        self.navigationController?.navigationBar.prefersLargeTitles = true //제목 크게 하기 (왼쪽 아래부분으로 가서 크게 함)
+        self.navigationItem.hidesSearchBarWhenScrolling = false // 스크롤 할 때 서치부분은 남겨두기(false로 설정하면 스크롤 남길 수 있음)
         tableView.reloadData()
     }
     

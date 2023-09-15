@@ -44,7 +44,7 @@ class CreateMemoViewController: UIViewController, UITextViewDelegate {
     }
     
     
-    // MARK: - iewDidDisappear: 뷰가 사라졌다 (데이터 저장 및 수정(업데이트))
+    // MARK: - viewDidDisappear: 뷰가 사라졌다 (데이터 저장 및 수정(업데이트))
 
     override func viewWillDisappear(_ animated: Bool) {
         successActionHandler?()
@@ -67,8 +67,11 @@ class CreateMemoViewController: UIViewController, UITextViewDelegate {
         var items: [UIBarButtonItem] = []
 
         let saveItem = UIBarButtonItem(title: "완료", style: .plain, target: self, action: #selector(saveButtonClicked))
+        
+        let saveItem2 = UIBarButtonItem(title: "완료", style: .plain, target: self, action: #selector(saveButtonClicked))
 
         items.append(saveItem)
+        items.append(saveItem2)
 
         navigationItem.rightBarButtonItems = items
         
